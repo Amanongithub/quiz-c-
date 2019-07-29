@@ -1,0 +1,154 @@
+#include<conio.h>
+#include<stdio.h>
+
+void first(char ch[]);
+void second(char ch[]);
+void third(char ch[]);
+void forth(char ch[]);
+void fifth(char ch[]);
+void sixth(char ch[]);
+void win(char ch[]);
+
+int main(){
+
+char a[30];
+
+printf("WELCOME  To  QUIZ GAME");
+printf("\n\nINST. \n1. YOU NEED TO SELECT ONE OPTION FROM 4 OPTIONS. \n2.RIGHT ANS WILL TAKE YOU NEXT QUESTION AND WRONG ANS WILL END THE GAME.");
+printf("\n3.YOU WOULD BE AWARDED HIGHER PRICE FOR EVERY RIGHT ANSWER.\n");
+
+printf("START THE GAME WITH ENTERING YOUR NAME.-\n");
+
+     gets(a);
+     if(a!=" "){
+     first(a);}
+	   getch();
+}
+void first(char ch[]){
+
+int q1;
+printf("PLAYER NAME:");
+puts(ch);
+printf("\n QUESTION FOR =Rs1000");
+       printf("\n\nQ1.THE TERM 'VIBGYOR' IS RELATED TO WHICH OPTIONS ?");
+       printf("\n\n1.RAINBOW \n2.ANIMALS \n3.COMPUTERS \n4.PENS");
+       printf("\n\nYOUR OPTION:");
+       scanf("%d",&q1);
+       if(q1==1){
+
+       printf("CONGO\nYOUR ANSWER IS RIGHT.\n WAIT FOR NEXT QUESTION")  ;
+
+       second(ch);   }
+       else{
+	   printf("WRONG ANSWER--- YOU LOST \nYOU GET Rs.0"    );}
+}
+void second(char ch[]){
+
+int q2;
+printf("PLAYER NAME:");
+puts(ch);
+printf("\n QUESRTION FOR =Rs 10000");
+       printf("\n\nQ2.WORLD WAR 1 WAS STARTED IN WHICH YEAR ?");
+       printf("\n\n1.1910 \n2.1912 \n3.1914 \n4.1916");
+       printf("\n\nYOUR OPTION:");
+       scanf("%d",&q2);
+       if(q2==3){
+ printf("CONGO\nYOUR ANSWER IS RIGHT.\n WAIT FOR NEXT QUESTION")  ;
+
+       third(ch);
+
+	  }
+       else{
+	   printf("WRONG ANSWER--- YOU LOST\nYOU GET Rs.1000 only"    );}
+}
+void third(char ch[]){
+
+int q3;
+printf("PLAYER NAME:");
+puts(ch);
+printf("\n QUESTION FOR =Rs 25000");
+       printf("\n\nQ3.SUPER MARIO WAS DEVELOPED IN WHICH COUNTRY ?");
+       printf("\n\n1.GERMANY \n2.JAPAN \n3.ENGLAND \n4.CHINA");
+       printf("\n\nYOUR OPTION:");
+       scanf("%d",&q3);
+       if(q3==2){
+ printf("CONGO\nYOUR ANSWER IS RIGHT.\n WAIT FOR NEXT QUESTION")  ;
+
+       forth(ch);
+
+	  }
+       else{
+	   printf("WRONG ANSWER--- YOU LOST  \nYOU GET Rs.10000 only"    );}
+}
+void forth(char ch[]){
+
+int q4;
+printf("PLAYER NAME:");
+puts(ch);
+printf("\n QUESTION FOR =Rs 50000");
+       printf("\n\nQ4.FAMOUS GAME GTA VICE CITY WAS RELEASED IN WHICH YEAR ?");
+       printf("\n\n1.2002 \n2.2003 \n3.2005 \n4.2007");
+       printf("\n\nYOUR OPTION:");
+       scanf("%d",&q4);
+       if(q4==1){
+ printf("CONGO \nYOUR ANSWER IS RIGHT.\n WAIT FOR NEXT QUESTION")  ;
+
+       fifth(ch);
+
+	  }
+       else{
+	   printf("WRONG ANSWER--- YOU LOST  \nYOU GET Rs 25000 only"    );}
+}
+void fifth(char ch[]){
+
+int q5;
+printf("PLAYER NAME:");
+puts(ch);
+printf("\n QUESTION FOR =Rs 75000");
+       printf("\n\nQ5.WHAT WAS THE FIRST THING EVER TO BE SOLD AT EBAY.COM ?");
+       printf("\n\n1.TEDDY BEAR \n2.CELL PHONE \n3.TOWEL \n4.BROKEN LASER POINTER");
+       printf("\n\nYOUR OPTION:");
+       scanf("%d",&q5);
+       if(q5==4){
+ printf("CONGO \nYOUR ANSWER IS RIGHT.\n WAIT FOR FINAL QUESTION")  ;
+
+	     sixth(ch);
+
+	  }
+       else{
+	   printf("WRONG ANSWER--- YOU LOST  \nYOU GET Rs.50000 only"    );}
+}
+void sixth(char ch[]){
+int q6;
+printf("PLAYER NAME:");
+puts(ch);
+printf("\n QUESTION FOR =Rs 100000");
+printf("\n FINAL QUESTION OF THE GAME");
+       printf("\n\nQ6.AMONG THESE WHO IS NOT  FOUNDER OF FACEBOOK ?");
+       printf("\n\n1.DUSTIN MOSKOVITZ \n2.ANDREW McCOLLUM \n3.NOAH GLASS \n4.CHRIS HUGHES");
+       printf("\n\nYOUR OPTION:");
+       scanf("%d",&q6);
+       if(q6==3){
+
+       win(ch);
+
+
+	  }
+       else{
+	   printf("WRONG ANSWER--- YOU LOST  \nYOU GET Rs.75000 only"    );}
+}
+ void win(char ch[])
+ {
+
+ printf("CONGRATS\n");
+
+  puts(ch);
+
+    printf("AAP CROREPATI BAN GEY !!!!!");
+
+    printf("SO WHERE IS PARTY TO NIGHT!!!!");
+
+
+
+
+ }
